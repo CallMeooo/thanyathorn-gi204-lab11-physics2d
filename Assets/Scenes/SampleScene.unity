@@ -3133,11 +3133,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 931285746}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2549e98f86fb6214f925883a11979efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 3a28af8470153004b83fb39cdcabb0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player2DController
   speed: 5
-  jumpForce: 600
+  jumpForce: 550
   isGrounded: 0
 --- !u!1 &1080606434
 GameObject:

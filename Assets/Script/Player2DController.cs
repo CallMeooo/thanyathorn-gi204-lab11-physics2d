@@ -19,14 +19,14 @@ public class Player2DController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current != null) 
+        if (Keyboard.current != null)
         {
             moveValue = (Keyboard.current.dKey.isPressed ? 1f : 0) - (Keyboard.current.aKey.isPressed ? 1f : 0);
         }
 
         _rb.linearVelocity = new Vector2(moveValue * speed, _rb.linearVelocity.y);
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded) 
+        if (Keyboard.current.spaceKey.wasPressedThisFrame && isGrounded)
         {
             _rb.AddForce(new Vector2(_rb.linearVelocity.x, jumpForce));
             Debug.Log("Jump");
@@ -34,7 +34,7 @@ public class Player2DController : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground")) 
+        if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
         }
